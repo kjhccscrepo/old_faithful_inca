@@ -41,7 +41,7 @@ int main() {
     std::ofstream outputFile("..data/faithful_updated.csv");
     int i = 0;
     while (std::getline(input_Eruption_File, line)) {
-        outputFile << line << ", " << bool_print(wait_times[i]) << std::endl;
+        outputFile << line << ", " << bool_print(wait_times[i]) << "\n";
         i++;
     }
     outputFile.close();
